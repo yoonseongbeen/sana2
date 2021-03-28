@@ -21,7 +21,7 @@ async def 도움말(ctx):
     embed.set_footer(text = f"{ctx.message.author.name} | 윤성빈#6115", icon_url = ctx.message.author.avatar_url)
     await ctx.send(embed = embed)
     
-    @bot.command()
+@bot.command()
 async def 가입(ctx):
     signup(ctx.author.name, ctx.author.id)
 
